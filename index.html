@@ -13,114 +13,85 @@
 <body>
   <h1>Instaneous Gradebook</h1>
   <form action="">
-    <label for="">Math:</label>
+
+    <label for="">Subject:</label>
     <select name="" id="">
       <option value="">- - - - - - -</option>
-      <option value="">Algebra 1</option>
+      <option value="" disabled></option>
+      <option value="" disabled>Math</option>
+      <option value="">Algebra 1</option></option>
       <option value="">Geometry</option>
       <option value="">Algebra 2</option>
       <option value="">Accelerated</option>
       <option value="">Pre-Calculus</option>
       <option value="">AP Calculus</option>
-      <option value="">None</option>
-    </select>
+      <option value="" disabled></option>
 
-    <br>
-
-    <label for="">English:</label>
-    <select name="" id="">
-      <option value="">- - - - - - -</option>
+      <option value="" disabled>English</option>
       <option value="">English 9</option>
       <option value="">English 10</option>
       <option value="">English 11</option>
       <option value="">AP English</option>
       <option value="">ERWC</option>
-      <option value="">None</option>
-    </select>
+      <option value="" disabled></option>
 
-    <br>
-
-    <label for="">History:</label>
-    <select name="" id="">
-      <option value="">- - - - - - -</option>
+      <option value="" disabled>History</option>
       <option value="">World History</option>
       <option value="">AP World History</option>
       <option value="">US History</option>
       <option value="">AP US History</option>
       <option value="">Government</option>
       <option value="">AP Government/Economy</option>
-      <option value="">None</option>
-    </select>
+      <option value="" disabled></option>
 
-    <br>
 
-    <label for="">Science:</label>
-    <select name="" id="">
-      <option value="">- - - - - - -</option>
+      <option value="" disabled>Science</option>
       <option value="">Biology</option>
       <option value="">Chemistry</option>
       <option value="">Physics</option>
       <option value="">AP Biology</option>
-      <option value="">None</option>
-    </select>
+      <option value="" disabled></option>
 
-    <br>
-
-    <label for="">Electives:</label>
-    <select name="" id="">
-      <option value="">- - - - - - -</option>
+      <option value="" disabled>Electives</option>
       <option value="">AVID 9</option>
       <option value="">AVID 10</option>
       <option value="">Junior College Prep</option>
       <option value="">Senior College Prep</option>
       <option value="">Psychology</option>
       <option value="">PLT Field</option>
-      <option value="">None</option>
-    </select>
+      <option value="" disabled></option>
 
-    <br>
-
-    <label for="">Electives:</label>
-    <select name="" id="">
-      <option value="">- - - - - - -</option>
-      <option value="">AVID 9</option>
-      <option value="">AVID 10</option>
-      <option value="">Junior College Prep</option>
-      <option value="">Senior College Prep</option>
-      <option value="">Psychology</option>
-      <option value="">PLT Field</option>
-      <option value="">None</option>
-    </select>
-
-    <br>
-
-    <label for="">Visual Performing Art:</label>
-    <select name="" id="">
-      <option value="">- - - - - - -</option>
+      <option value="" disabled>Visual Performing Arts</option>
       <option value="">Fundamentals of Art</option>
       <option value="">Art 2</option>
       <option value="">Photography</option>
       <option value="">Yearbook</option>
       <option value="">None</option>
-    </select>
+      <option value="" disabled></option>
 
-    <br>
-
-    <label for="">Language:</label>
-    <select name="" id="">
-      <option value="">- - - - - - -</option>
+      <option value="" disabled>Foreign Language</option>
       <option value="">Spanish 1</option>
       <option value="">Spanish 2</option>
       <option value="">Spanish 3</option>
       <option value="">Spanish 4</option>
       <option value="">AP Spanish Language and Culture</option>
       <option value="">AP Spanish Literature and Culture</option>
-      <option value="">None</option>
+      <option value="" disabled></option>
+
     </select>
 
+<br>
+    <form action="">
+
+    <label for="quantity">Mastery Percentage:</label>
+    <input type="number" id="" name="" min="0" max="150" step="0.01"> <!--Tweak this around so there's percentage -->
+  </form>
+  <label for="quantity">College Readiness Percentage:</label>
+  <input type="number" id="" name="" min="0" max="150" step"0.01"> <!--Tweak this around so there's percentage -->
+</form>
 
     <br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Calculate">
   </form>
 
 
