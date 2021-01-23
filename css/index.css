@@ -1,4 +1,16 @@
-body{
-  background-color: blue;
+html {
+      display: table;
+      margin: auto;
+  }
+
+body {
+      display: table-cell;
+      vertical-align: middle;
+      background-color: #98D7C2;
+  }
+h1{
+  font-family: 'Montserrat';
+  color:#167D7F;
+  font-size:3rem;
 }
-/*add your stuff in here lol*/
+/*add your stuff in here*/

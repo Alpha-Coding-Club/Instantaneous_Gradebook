@@ -6,10 +6,14 @@
   <meta charset="utf-8">
   <title>Instaneous Gradebook</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="css/favicon.ico">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Josefin+Slab:wght@400;500&family=Montserrat:wght@300&family=Sacramento&display=swap">
 </head>
 
 
 <!-- DEEZ NUTS-->
+
 <body>
   <h1>Instaneous Gradebook</h1>
   <h2>Final Grade Calculator</h2>
@@ -17,10 +21,11 @@
 
     <label for="">Subject:</label>
     <select name="" id="">
-      <option value="" selected = "selected">Select your subject</option>
+      <option value="" selected="selected">Select your subject</option>
       <option value="" disabled></option>
       <option value="" disabled>Math</option>
-      <option value="">Algebra 1</option></option>
+      <option value="">Algebra 1</option>
+      </option>
       <option value="">Geometry</option>
       <option value="">Algebra 2</option>
       <option value="">Accelerated</option>
@@ -81,52 +86,69 @@
 
     </select>
 
-<br>
+    <br>
     <form action="">
 
-    <label for="quantity">Mastery Percentage:</label>
+      <label for="quantity">Mastery Percentage:</label>
+      <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="%">
+    </form>
+
+
+
+    <label for="quantity">College Readiness Percentage:</label>
+    <input type="number" id="" name="" min="0" max="150" step"0.01" placeholder="%">
+  </form>
+  <form action="">
+
+    <label for="quantity">Desired Percentage:</label>
     <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="%">
   </form>
 
 
-
-  <label for="quantity">College Readiness Percentage:</label>
-  <input type="number" id="" name="" min="0" max="150" step"0.01" placeholder="%" >
-</form>
-<form action="">
-
-<label for="quantity">Desired Percentage:</label>
-<input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="%">
-</form>
+  <form action="">
     <br>
-    <input type="submit" value="Calculate">
+    <label for="quantity">College Readiness Weight:</label>
+    <input type="number" id="" name="" min="0" max="100" step="1" placeholder="%">
+  </form>
+  <form action="">
+
+    <label for="quantity">Mastery Weight:</label>
+    <input type="number" id="" name="" min="0" max="100" step="1" placeholder="%">
+  </form>
+  <br>
+  <input type="submit" value="Calculate">
+  <input type="submit" value="Override Grading Weight">
   </form>
 
   <form action="">
-<br>
-  <label for="quantity">Calculated Percentage:</label>
-  <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="%" disabled>
-</form>
+    <br>
+    <label for="quantity">Calculated Percentage:</label>
+    <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="%" disabled>
+  </form>
 
-<h2>What assignment should I retake?</h2>
+  <h2>What assignment should I retake?</h2>
 
-<!-- TO DO LIST:
+  <!-- TO DO LIST:
 
 - Manually enter grading weight (optional?)
 DONE: Link to a GPA Calculator (https://gpacalculator.net/high-school-gpa-calculator/)
-- Message from the developers (Loading Screen tips)
-- About us/Credits Page
+DONE?: Message from the developers (Loading Screen tips) - Thanks for using Calc msg
 DONE Random Quote of the Day
+DONE Add a Favicon - Huan is on it
 - Description of how CALC works
+DONE About us/Credits Page
 - Dr. Mo films tutorial
 
 -->
 
-<h3><a href="https://gpacalculator.net/high-school-gpa-calculator/" target="_blank">GPA Calculator</a></h3>
-<br>
-<h3>Quote of the Day:</h3>
-<p><i>To be or not to be, that is the question</i></p>
+  <h3><a href="https://gpacalculator.net/high-school-gpa-calculator/" target="_blank">GPA Calculator</a></h3>
+  <br>
+  <h3>Quote of the Day:</h3>
+  <p><i>To be or not to be, that is the question</i></p>
 
+  <h4>Message from the Developers</h4>
+  <p>Thanks for using our website! We hope this site is of great use to you :)</p>
+  <p><a href="aboutus.html">About Us</a></p>
 </body>
 
 
