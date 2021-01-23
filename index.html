@@ -72,7 +72,6 @@
       <option value="">Art 2</option>
       <option value="">Photography</option>
       <option value="">Yearbook</option>
-      <option value="">None</option>
       <option value="" disabled></option>
 
       <option value="" disabled>Foreign Language</option>
@@ -100,7 +99,7 @@
   </form>
   <form action="">
 
-    <label for="quantity">Desired Percentage:</label>
+    <label for="quantity">Desired Grade Percentage:</label>
     <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="%">
   </form>
 
@@ -108,29 +107,49 @@
   <form action="">
     <br>
     <label for="quantity">College Readiness Weight:</label>
-    <input type="number" id="" name="" min="0" max="100" step="1" placeholder="%">
+    <input type="number" id="" name="" min="0" max="100" step="1" placeholder="%" disabled>
   </form>
   <form action="">
 
     <label for="quantity">Mastery Weight:</label>
-    <input type="number" id="" name="" min="0" max="100" step="1" placeholder="%">
+    <input type="number" id="" name="" min="0" max="100" step="1" placeholder="%" disabled>
   </form>
   <br>
   <input type="submit" value="Calculate">
-  <input type="submit" value="Override Grading Weight">
+  <input type="submit" value="Override Default Grading Weight (advanced)">
+  <!-- Clicking Override will unlock/enable the option for user to input their desired CR/Mastery Weight%, default will be in place-->
   </form>
 
   <form action="">
     <br>
     <label for="quantity">Calculated Percentage:</label>
     <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="%" disabled>
-  </form>
 
-  <h2>What assignment should I retake?</h2>
+  </form>
+<hr>
+
+
+
+
+  <h2>What assignment should I retake? [Work in Progress]</h2>
+<br>
+<input type="text" id="" name="" placeholder="Assignment Name">
+<input type="number" id="" name="" min="0" max="100" step="1" placeholder="%" style="width: 50px" >
+
+<br>
+  <input type="submit" value="Add New Assignment">
+  <br><br>
+  <input type="submit" value="Calculate">
+
+
+
+
+
+  <hr>
 
   <!-- TO DO LIST:
 
-- Manually enter grading weight (optional?)
+DONE Manually enter grading weight (optional?)
 DONE: Link to a GPA Calculator (https://gpacalculator.net/high-school-gpa-calculator/)
 DONE?: Message from the developers (Loading Screen tips) - Thanks for using Calc msg
 DONE Random Quote of the Day
