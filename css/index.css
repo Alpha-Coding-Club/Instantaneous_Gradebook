@@ -1,16 +1,65 @@
-html {
-      display: table;
-      margin: auto;
-  }
 
 body {
-      display: table-cell;
-      vertical-align: middle;
       background-color: #98D7C2;
+        text-align: center;
   }
+
 h1{
   font-family: 'Montserrat';
   color:#167D7F;
   font-size:3rem;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Spartan', sans-serif;;
+  color:#167D7F;
+  font-size:2rem;
+  text-align: center;
+}
+
+option {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  color: #60666d;
+}
+
+Select title {
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+
+label {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  color: #4C4C4C ;
+
+}
+
+hr {
+  border: dotted #167D7F 5px;
+  border-bottom: none;
+  width: 5%;
+  margin: 100px auto;
+}
+
+.button {
+  font-family: 'Montserrat';
+}
+
+h3 {
+  font-family: 'Montserrat';
+}
+
+h4 {
+  font-family: 'Montserrat';
+}
+
+p {
+  font-family: 'Montserrat';
 }
 /*add your stuff in here*/
