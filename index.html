@@ -22,7 +22,7 @@
 <body>
   <h1>Instaneous Gradebook</h1>
   <h2>Final Grade Calculator</h2>
-  <form action="">
+  <form action="#" onsubmit="myFuction();return false">
 
     <label for="">Subject:</label>
     <select name="" id="" style="width: 250px0">
@@ -91,53 +91,52 @@
     </select>
 
     <br>
-    <form action="">
 
       <label for="quantity">Mastery:</label>
-      <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="">
+      <input type="number" id="ptsInputted" name="" min="0" max="150" step="0.01" placeholder="">
       <label for=""> out of</label>
-      <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="">
-    </form>
+      <input type="number" id="ptsMaximumInputted" name="" min="0" max="150" step="0.01" placeholder="">
+    <br>
 
 
 
     <label for="quantity">College Readiness Percentage:</label>
-    <input type="number" id="" name="" min="0" max="150" step"0.01" placeholder="%">
-  </form>
-  <form action="">
+    <input type="number" id="collegeReadinessPercent" name="" min="0" max="150" step"0.01" placeholder="%">
+    <br>
+
 
     <label for="quantity">Desired Grade Percentage:</label>
-    <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="%">
-  </form>
+    <input type="number" id="desiredGrade" name="" min="0" max="150" step="0.01" placeholder="%">
+      <br>
 
 
-  <form action="">
+
     <br>
     <label for="quantity">College Readiness Weight:</label>
-    <input type="number" id="" name="" min="0" max="100" step="1" placeholder="%" disabled>
-  </form>
-  <form action="">
+    <input type="number" id="collegeReadinessWeight" name="" min="0" max="100" step="1" placeholder="%" value="10" disabled>
 
+<br>
     <label for="quantity">Mastery Weight:</label>
-    <input type="number" id="" name="" min="0" max="100" step="1" placeholder="%" disabled>
-  </form>
-  <form action="">
+    <input type="number" id="masteryWeight" name="" min="0" max="100" step="1" placeholder="%" value = "90" disabled>
 
+
+<br>
+<br>
     <label for="quantity">Points the Final is Worth:</label>
-    <input type="number" id="" name="" min="0" max="100" step="1" placeholder="" >
-  </form>
+    <input type="number" id="ptsOnFinal" name="" min="0" max="100" step="1" placeholder="" >
+
   <br>
-  <button class="button">Calculate</button>
+  <input type="submit" value="Calculate">
   <button class="button">Override Default Grading Weight (advanced)</button>
   <!-- Clicking Override will unlock/enable the option for user to input their desired CR/Mastery Weight%, default will be in place-->
+
 </form>
 
-  <form action="">
+<!--
     <br>
     <label for="quantity">Calculated Percentage:</label>
     <input type="number" id="" name="" min="0" max="150" step="0.01" placeholder="%" disabled>
-
-  </form>
+-->
 <hr>
 
 

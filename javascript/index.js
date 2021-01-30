@@ -1,14 +1,34 @@
 console.log("Hi");
-
-const desiredGrade = 100
-const collegeReadinessPercent = 115
-const masteryWeight = 0.9
-const collegeReadinessWeight = 0.1
-const masteryPercent = (desiredGrade/masteryWeight) - (collegeReadinessPercent*collegeReadinessWeight/masteryWeight)
+/*
+var desiredGrade = 100
+var collegeReadinessPercent = 115
+var masteryWeight = 0.9
+var collegeReadinessWeight = 0.1
+var masteryPercent = (desiredGrade/masteryWeight) - (collegeReadinessPercent*collegeReadinessWeight/masteryWeight)
 console.log(masteryPercent) //should be 98.3
+*/
+
+function myFuction(){
+
+    var desiredGrade = document.getElementById("desiredGrade").value;
+    console.log(desiredGrade)
+    var collegeReadinessPercent = document.getElementById("collegeReadinessPercent").value;
+    console.log(collegeReadinessPercent)
+    var masteryWeight = document.getElementById("masteryWeight").value /100;
+    var collegeReadinessWeight = document.getElementById("collegeReadinessWeight").value /100;
+    var masteryPercent = (desiredGrade/masteryWeight) - (collegeReadinessPercent*collegeReadinessWeight/masteryWeight)
+    console.log(masteryPercent)
 
 
-
+    var ptsInputted = document.getElementById("ptsInputted").value;
+    var ptsMaximumInputted = document.getElementById("ptsMaximumInputted").value;
+    var ptsOnFinal = document.getElementById("ptsOnFinal").value;
+    var gradeOnFinal = ((masteryPercent*ptsMaximumInputted)/100) + ((masteryPercent*ptsOnFinal)/100) - ptsInputted
+    console.log (gradeOnFinal)
+    console.log ("you will need to score at least " + gradeOnFinal + " pts on the final")
+    console.log("AKA get a " + (gradeOnFinal/ptsOnFinal)*100 + "% on the final")
+    
+}
 /*
 
 Final Grade Calculator:
@@ -76,10 +96,12 @@ FORMULA SOLVED:
 
 
 */
-const ptsInputted = 63
-const ptsMaximumInputted = 74
-const ptsOnFinal = 26
-const gradeOnFinal = ((masteryPercent*ptsMaximumInputted)/100) + ((masteryPercent*ptsOnFinal)/100) - ptsInputted
+/*
+var ptsInputted = 63
+var ptsMaximumInputted = 74
+var ptsOnFinal = 26
+var gradeOnFinal = ((masteryPercent*ptsMaximumInputted)/100) + ((masteryPercent*ptsOnFinal)/100) - ptsInputted
 console.log (gradeOnFinal)
 console.log ("you will need to score at least " + gradeOnFinal + " pts on the final")
 console.log("AKA get a " + (gradeOnFinal/ptsOnFinal)*100 + "% on the final")
+*/
