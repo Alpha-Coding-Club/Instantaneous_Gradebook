@@ -1,5 +1,13 @@
 console.log("Hi");
 
+const D = 100
+const C = 115
+const mw = 0.9
+const cw = 0.1
+const M = (D/mw) - (C*cw/mw)
+console.log(M) //should be 98.3
+
+
 
 /*
 
@@ -68,3 +76,10 @@ FORMULA SOLVED:
 
 
 */
+const ptsinputted = 63
+const ptsmaximuminputted = 74
+const ptsonfinal = 26
+const X = ((M*ptsmaximuminputted)/100) + ((M*ptsonfinal)/100) - ptsinputted
+console.log (X)
+console.log ("you will need to score at least " + X + " pts on the final")
+console.log("AKA get a " + (X/ptsonfinal)*100 + "% on the final")
