@@ -25,20 +25,40 @@ D = M*mw + C*cw
 ******   M = D/mw - C*cr/mw    Something's missing here  *******
 
 
-98.3 percent on huan's final
+M = 98.3
 98.3*0.9 = 88.47 + 11.5 = 99.97
 
 We need a way to bump up the 85.13 score on mastery to a 98.3 score on Mastery
 
-63/74 -> 98.3
+63/74... add a new assignment, lets say it's going to be out of 26 Points
+63+x/74+pts = M*0.1
+
+X will give us the pts required to attain the Grade
+x/pts will give us the % the student will need to get that grade
+
+35.3/26 on the test means you need a 135.7% to raise your grade to 100%
+
+
+FORMULA SOLVED:
+
+1) Solve for M, the Mastery % the student needs so they can reach desired Grade
+    M = D/mw - C*cr/mw
+2) Plug into secondary equation
+    pts they inputed + x/pts maximum inputted + points on final = M
+
+
+    X = M* pts max inputted/100 + M* points on Final/100 - pts they inpuuted
+
+
+    Solve for X
+    X will be the points they need on their final.
+    Do x/pts maximum and that'll give you the % you need.
+
+    I think this is it chief!
 
 
 
-35/26 on the test means you need a 134.6% to raise your grade to 100%
-dklhvakjlsdfhlkjshfalkjsfhalkjsdfhas SCRAPPED!!!!
 
-
-RIP our brains
 
 85.13*90% = 76.617
 115*10% = 11.5
