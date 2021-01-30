@@ -25,9 +25,9 @@ function myFuction(){
     var ptsOnFinal = document.getElementById("ptsOnFinal").value;
     var gradeOnFinal = ((masteryPercent*ptsMaximumInputted)/100) + ((masteryPercent*ptsOnFinal)/100) - ptsInputted
     console.log (gradeOnFinal)
-    console.log ("you will need to score at least " + gradeOnFinal + " pts on the final")
-    console.log("AKA get a " + (gradeOnFinal/ptsOnFinal)*100 + "% on the final")
-    
+    alert("you will need to score at least " + gradeOnFinal + " pts on the final AKA get a " + (gradeOnFinal/ptsOnFinal)*100 + "% on the final")
+
+
 }
 /*
 
