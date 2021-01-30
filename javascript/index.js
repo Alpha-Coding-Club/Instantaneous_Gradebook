@@ -1,11 +1,11 @@
 console.log("Hi");
 
-const D = 100
-const C = 115
-const mw = 0.9
-const cw = 0.1
-const M = (D/mw) - (C*cw/mw)
-console.log(M) //should be 98.3
+const desiredGrade = 100
+const collegeReadinessPercent = 115
+const masteryWeight = 0.9
+const collegeReadinessWeight = 0.1
+const masteryPercent = (desiredGrade/masteryWeight) - (collegeReadinessPercent*collegeReadinessWeight/masteryWeight)
+console.log(masteryPercent) //should be 98.3
 
 
 
@@ -76,10 +76,10 @@ FORMULA SOLVED:
 
 
 */
-const ptsinputted = 63
-const ptsmaximuminputted = 74
-const ptsonfinal = 26
-const X = ((M*ptsmaximuminputted)/100) + ((M*ptsonfinal)/100) - ptsinputted
-console.log (X)
-console.log ("you will need to score at least " + X + " pts on the final")
-console.log("AKA get a " + (X/ptsonfinal)*100 + "% on the final")
+const ptsInputted = 63
+const ptsMaximumInputted = 74
+const ptsOnFinal = 26
+const gradeOnFinal = ((masteryPercent*ptsMaximumInputted)/100) + ((masteryPercent*ptsOnFinal)/100) - ptsInputted
+console.log (gradeOnFinal)
+console.log ("you will need to score at least " + gradeOnFinal + " pts on the final")
+console.log("AKA get a " + (gradeOnFinal/ptsOnFinal)*100 + "% on the final")
